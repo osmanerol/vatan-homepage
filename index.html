@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatan Bilgisayar</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="navbar fixed-top">
+        <div class="container">
+            <a href="#"  class="navbar-brand">
+                <img src="https://via.placeholder.com/120x60" alt="navbar-logo">
+            </a>
+            <a href="#" class="categories">
+                <i class="material-icons mr-2">menu</i> <span>Kategoriler</span>
+            </a>
+            <div class="search">
+                <input type="text" name="search" id="search" style="font-family: FontAwesome;" placeholder="&#xf002 Ürün ara">
+            </div>
+            <div class="profile">
+                <a href="#">Üyelik <span class="material-icons my-auto"> account_circle </span></a>
+            </div>
+            <div class="basket">
+                <a href="#" >Sepetim <span class="material-icons pr-1">shopping_basket</span> <span class="badge badge-primary"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-container-auto">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://via.placeholder.com/700x600" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/600x600" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/500x600" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/400x600" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/300x600" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/500x600" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="liked">
+                <div class="title">
+                    <h3>Öne çıkan ürünler</h3>
+                    <a href="#">TÜM ÖNE ÇIKANLAR <span class="material-icons ml-1">arrow_right_alt</span></a>
+                </div>
+                <div data-uri="/relatedProducts.json" class="relatedProducts item-container"> </div>
+                <div data-uri="/relatedProducts.json" class="relatedProducts2 item-container"> </div>
+            </div>
+            <div class="best-seller">
+                <div class="title">
+                    <h3>Çok satanlar</h3>
+                    <a href="#">TÜM ÇOK SATANLAR<span class="material-icons ml-1">arrow_right_alt</span></a>
+                </div>
+                <div data-uri="/bestSeller.json" class="bestSellerProducts item-container">
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="menu">
+                <div class="official">
+                    <p class="footer-title">KURUMSAL</p>
+                    <div class="list">
+                        <ul class="p-0">
+                            <li><a href="#">Hakkımızda</a></li>
+                            <li><a href="#">Müşteri Hizmetleri</a></li>
+                            <li><a href="#">Sipariş Aşamaları</a></li>
+                            <li><a href="#">Sıkça Sorulan Sorular</a></li>
+                            <li><a href="#">İnsan Kaynakları</a></li>
+                            <li><a href="#">Gizlilik Politikamız</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">İletişim</a></li>
+                            <li><a href="#">Vatan Card</a></li>
+                            <li><a href="#">Servis Takip Formu</a></li>
+                            <li><a href="#">Mağazalar</a></li>
+                            <li><a href="#">İşlem Rehberi</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categories">
+                    <p class="footer-title">KATEGORİLER</p>
+                    <div class="list">
+                        <ul class="p-0">
+                            <li><a href="#">Bilgisayar</a></li>
+                            <li><a href="#">Cep Telefonu</a></li>
+                            <li><a href="#">Tablet PC</a></li>
+                            <li><a href="#">Akıllı Saat</a></li>
+                            <li><a href="#">Vestel TV</a></li>
+                            <li><a href="#">Oyun Bilgisayarı</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Küçük Ev Aletleri</a></li>
+                            <li><a href="#">Kişisel Bakım Ürünleri</a></li>
+                            <li><a href="#">Elektrikli Süpürge</a></li>
+                            <li><a href="#">Ütü</a></li>
+                            <li><a href="#">Masaüstü Bilgisayar</a></li>
+                            <li><a href="#">Sabit Diskler</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="special-products">
+                    <p class="footer-title">ÖZEL ÜRÜNLER</p>
+                    <div class="list">
+                        <ul class="p-0">
+                            <li><a href="#">iPhone 7</a></li>
+                            <li><a href="#">iPhone 6S</a></li>
+                            <li><a href="#">iPhone 5S</a></li>
+                            <li><a href="#">iPhone SE</a></li>
+                            <li><a href="#">General Mobile 5 Plus</a></li>
+                            <li><a href="#">Galaxy S7</a></li>
+                            <li><a href="#">Note 5</a></li>
+                            <li><a href="#">Galaxy S6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom">
+                <div class="copyright">
+                    <p>Türkiyenin Teknoloji Hiperstoru</p>
+                    <p>Copyright 2016 Vatan Bilgisayar San. ve Tic. A.Ş</p>
+                </div>
+                <div class="cards">
+                    <img src="https://via.placeholder.com/100x70" alt="express">
+                    <img src="https://via.placeholder.com/100x70" alt="visa">
+                    <img src="https://via.placeholder.com/100x70" alt="norton">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="./index.js"></script>
+</body>
+</html>

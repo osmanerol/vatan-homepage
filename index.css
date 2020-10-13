@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    width:100%;
+}
+
+/* swiper */
+.swiper-container-auto {
+    background-color:rgb(21,100,192);
+    margin-top:70px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 3em;
+    z-index: 1;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: rgb(21,100,192);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img{
+    height:100%;    
+}
+
+.swiper-button-next{
+    margin-right:6em;
+    background-color:rgba(21,33,47,0.5);
+    padding:2.5em 1.5em ;
+}
+
+.swiper-button-prev{
+    margin-left:6em;
+    background-color:rgb(21,33,47);
+    padding:2.5em 1.5em ;
+}
+
+.navbar{
+    width:100%;
+    background-color:rgb(21,100,192);
+    color:#fff;
+    padding:0 ;  
+}
+
+.navbar .container{
+    padding:0;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#fff;
+}
+
+.navbar a span{
+    margin-left:4px;
+}
+
+.navbar .profile a, .navbar .basket a, .navbar .categories{
+    display:flex;
+    align-items:center;
+}
+
+.navbar .categories{
+    font-size:16px;
+}
+
+.navbar .search{
+    margin-bottom:0;
+}
+
+.navbar .search input{
+    background-color:rgb(67,131,203);
+    border:none;
+    width:650px;
+    padding:12px;
+    border-radius:4px;
+}
+
+.navbar .search input:focus{
+    outline:none;
+    color:#fff;
+}
+
+.navbar .search input::placeholder{
+    text-align:center;
+    color:#fff;
+    font-weight:light;
+}
+
+.content .container{
+    font-family: 'Roboto', sans-serif;
+}
+
+.content .container .title{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin:1em auto;
+}
+
+.content .container .title h3{
+    font-size:26px
+}
+
+.content .container .title a{
+    display:flex;
+    align-items:center;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.content .item-container{
+    display:flex;
+    flex-direction:row;
+    height:380px;
+}
+
+.content .item-container .relatedProductItem:hover{
+    border:1px solid rgb(23,99,193);;
+}
+
+.content .item-container .relatedProductItem{
+    width:250px;
+    padding:2em 0;
+    text-align:center;
+    float:center;
+    border:1px solid  #ddd;
+}
+
+.content .item-container .relatedProductItem img{
+    height:160px;
+}
+
+.content .item-container .item-code{
+    font-size:11px;
+    color:#ccc;
+}
+
+.content .item-container .point{
+    font-size:11px;
+}
+
+.content .item-container .point i{
+    color:#ffb300;
+}
+
+.content .item-container .point span{
+    color:#ccc;
+}
+
+.content .item-container .item-title{
+    font-size:12px;
+}
+
+.content .item-container .item-price{
+    font-size:24px;
+    color:#2237bf;
+    font-weight:bold;
+}
+
+.content .item-container .cargo{
+    font-size:10px;
+    background-color:#ddd;
+    margin:2em 4.5em;
+    color:#999;
+    padding:3px;
+}
+
+.no-visible{
+    display:none;
+}
+
+.no-visible-cart{
+    display:flex;
+}
+
+.add-cart{
+    width:100%;
+}
+
+.add-cart button{
+    color:#fff;
+    border:none;
+    float:left;
+    padding:0.8em;
+}
+
+.add-cart button:focus{
+    outline:none;   
+}
+
+.add-cart .icon{
+    background-color:rgb(23,99,193);
+    flex-grow:1;
+}
+
+.add-cart .cart{
+    background-color:rgb(33,150,243);
+    flex-grow:4;
+}
+
+.menu .list{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.footer .menu{
+    margin-top:2em;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+.footer .footer-title{
+    font-weight:700;    
+    font-size:13px; 
+    color:#5c5e5d;
+}
+
+.footer .list ul{
+    list-style:none;
+}
+
+.footer .list li{
+    margin-bottom:4px;  
+}
+
+.footer .list li a{
+    text-decoration:none;
+    font-size:12px;
+    font-weight:bold;
+    color:#929493;
+}
+
+.footer hr{
+    margin:2.5em auto;
+}
+
+.footer .bottom {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-bottom:2em;
+}
+
+.footer .bottom .copyright{
+    font-size:11px;
+    font-weight:bold;
+    color:#929493;
+}
